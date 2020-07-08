@@ -1,0 +1,27 @@
+.footer-section {
+  background-color: #2f303a;
+}
+.footer-box {
+  display: flex;
+  padding-top: 57px;
+  padding-bottom: 28px;
+}
+.footer-box div + div {
+  margin-left: 94px;
+}
+.footer-contacts .item {
+  width: 231px;
+  margin-top: 9px;
+}
+
+.footer-titles {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $main-color-white;
+}
+.logo-footer {
+  --color4: #ffffff;
+}

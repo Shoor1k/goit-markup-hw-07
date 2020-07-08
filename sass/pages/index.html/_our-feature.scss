@@ -1,0 +1,49 @@
+/* Селекторы секции преимущества */
+.feature {
+  display: flex;
+  padding-top: 95px;
+}
+.feature li {
+  width: 270px;
+  &::before {
+    content: "";
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: center;
+    background-color: $sub-main-color-white;
+  }
+  & + li {
+    margin-left: 30px;
+  }
+}
+
+.antena-img::before {
+  background-image: url(../images/antena.svg);
+}
+.clock-img::before {
+  background-image: url(..//images/clock.svg);
+}
+.diagram-img::before {
+  background-image: url(..//images/diagram.svg);
+}
+.container-img::before {
+  background-image: url(..//images/astronaunt.svg);
+}
+.feature-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.feature-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $sub-main-color-black;
+}
