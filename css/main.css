@@ -1028,11 +1028,8 @@ ul {
   z-index: 1;
 }
 
-.modal-form-input:focus ~ .icon-name {
-  fill: #2196f3;
-}
-
-.modal-form-input:focus ~ .icon-name {
+.modal-form-input:focus ~ .icon-name,
+.modal-form-input:not(:placeholder-shown) ~ .icon-name {
   fill: #2196f3;
 }
 
@@ -1099,6 +1096,7 @@ ul {
           transform: translateY(-30px);
   left: 16px;
   color: #2196f3;
+  border-color: #2196f3;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -1118,10 +1116,15 @@ ul {
   padding: 12px 18px 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: #757575;
+}
+
+.modal-form-input:focus, .modal-form-input:not(:placeholder-shown) {
+  border-color: #2196f3;
 }
 
 .modal-form-input.text-area {
