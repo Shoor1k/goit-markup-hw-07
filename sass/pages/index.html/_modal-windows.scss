@@ -154,7 +154,8 @@
   color: $sub-main-color-black;
   &:focus,
   &:not(:placeholder-shown) {
-    border-color: $hover-color;
+    border-color: #2196f3;
+    outline: none;
   }
 }
 

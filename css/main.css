@@ -1125,6 +1125,7 @@ ul {
 
 .modal-form-input:focus, .modal-form-input:not(:placeholder-shown) {
   border-color: #2196f3;
+  outline: none;
 }
 
 .modal-form-input.text-area {
